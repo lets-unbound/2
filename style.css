@@ -34,7 +34,7 @@ body {
 }
 
 #sectionContent {
-  display: none; /* Hide the section by default */
+  display: block; /* Hide the section by default */
 }
 #sectionContent.open {
   display: block; /* Show the section when the "open" class is applied */
