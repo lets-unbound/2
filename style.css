@@ -106,9 +106,15 @@ body {
   color: rgb(0, 0, 0);
   padding: 10px;
   border: none;
-  font-size: 18px;
+  font-size: 20px;
   box-shadow: none;
 }
+
+.s:hover{
+  background-color: #bbfcff;
+  color: #000000;
+}
+
 
 .button1 {
     margin-bottom: 10px;
@@ -150,18 +156,17 @@ body {
 p{
   color: #000;
    
-   padding:10px 20px;
+  padding:10px 20px;
   font-size: 20px;
   font-family: sans-serif;
   
-   margin-top: 20px;
+  margin-top: 20px;
   
-   background-color: rgb(192, 233, 255);
- 
-   border-radius: 40px;
+  background-color: rgb(227, 228, 228);
+  border-radius: 40px;
 
  
- }
+}
 
 .s2{
   margin: 0 auto;
