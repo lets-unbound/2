@@ -1,20 +1,20 @@
 const toggleButton = document.getElementById('toggleButton');
 const sectionContent = document.getElementById('sectionContent');
-const c = document.getElementById("canvas");
-const closeButton = document.getElementById("closeButton");
+const c= document.getElementById("canvas")
+const closeButton=document.getElementById("closeButton")
 const clearButton = document.getElementById("clearButton");
-const instructions = document.getElementById("instructions");
+const pb=document.getElementById("pb")
 
 toggleButton.addEventListener('click', () => {
-  if (instructions.style.display === 'none') {
-    instructions.style.display = 'block';
-    sectionContent.style.display = 'none';
-    c.style.display = 'none';
-  } else {
-    instructions.style.display = 'none';
+  if (sectionContent.style.display === 'none') {
     sectionContent.style.display = 'block';
-    c.style.display = 'block';
+    c.style.display='none'
+  } else {
+    sectionContent.style.display = 'none';
+    c.style.display="block"
   }
+
+  
 });
 
 clearButton.addEventListener('click', () => {
@@ -22,10 +22,17 @@ clearButton.addEventListener('click', () => {
   dots = [];
 });
 
-closeButton.addEventListener('click', () => {
+closeButton.addEventListener('click',()=>{
   sectionContent.style.display = 'none';
-  c.style.display = "block";
-});
+  c.style.display="block"
+})
+
+
+pb.addEventListener('click',()=>{
+  sectionContent.style.display = 'none';
+  c.style.display="block"
+})
+
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
@@ -85,6 +92,7 @@ canvas.addEventListener('click', (e) => {
 
 function clearCanvas() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
 }
 
 function getRandomColor() {
